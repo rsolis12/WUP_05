@@ -68,7 +68,7 @@ The first plot shows how many people got infected, it appears around less than 1
 
 ```{r}
 # Bar chart for "infected" variable
-ggplot(Charlie, aes(x = infected, fill = treatment)) +
+ggplot(DRUGUSR, aes(x = infected, fill = treatment)) +
   geom_bar(position = "dodge", color = "black") +
   labs(x = "Infected", y = "Count") +
   ggtitle("Bar Chart of Infected and Treatment") +
@@ -107,30 +107,11 @@ People who end up getting aids about 25% of them have taken the drugs and the ot
 
 
 
+
+
 # Discussion and Conclusion
-
-```{r}
-library(ggplot2)
-
-# Assuming "infected" and "treatment" are column names in the data frame "Charlie"
-
-# Bar chart for "infected" variable
-ggplot(Charlie, aes(x = infected, fill = treatment)) +
-  geom_bar(position = "dodge", color = "black") +
-  labs(x = "Infected", y = "Count") +
-  ggtitle("Bar Chart of Infected and Treatment") +
-  scale_fill_manual(values = c("drug" = "blue", "placebo" = "red")) +
-  theme(legend.position = "bottom")
-
-# Bar chart for "treatment" variable
-ggplot(Charlie, aes(x = treatment, fill = treatment)) +
-  geom_bar(position = "dodge", color = "black") +
-  labs(x = "Treatment", y = "Count") +
-  ggtitle("Bar Chart of Treatment") +
-  scale_fill_manual(values = c("drug" = "blue", "placebo" = "red")) +
-  theme(legend.position = "bottom")
-
-```
 
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhaps are related for some other reason.  Watch the chapter 6 videos from the George Town videos collection.!-->
+
+In this project i used the my tricks helper file and practiced dypler to show the data of the effectiveness of the aids drugs and the placebo given to the patients. The ones who took the drugs on average had been protected by aids while the placebo group had gotten infected. Thus proving the drug worked.
