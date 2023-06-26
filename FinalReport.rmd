@@ -79,7 +79,7 @@ ggplot(DRUGUSR, aes(x = infected, fill = treatment)) +
 ```
 ```{r}
 # Bar chart for "treatment" variable
-ggplot(Charlie, aes(x = treatment, fill = treatment)) +
+ggplot(DRUGUSR, aes(x = treatment, fill = treatment)) +
   geom_bar(position = "dodge", color = "black") +
   labs(x = "Treatment", y = "Count") +
   ggtitle("Bar Chart of Treatment") +
